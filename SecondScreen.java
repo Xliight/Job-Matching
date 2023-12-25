@@ -60,7 +60,6 @@ public class SecondScreen extends JFrame {
 					String rSkills = null;
 					String dSkills = null;
 					SecondScreen frame = new SecondScreen(edu,dis,year,rSkills);
-					//SecondScreen frame = new SecondScreen("MS","Computer Science","3","Python","Python");
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -127,13 +126,7 @@ public class SecondScreen extends JFrame {
 			k.hasNext();
 		}
 
-//		resultsTabel.setModel(new DefaultTableModel(new Object[] {"JodID","Score"},0));
-//		HashMap<Integer, Double> map;
-//		for(Map.Entry<?,?> entry : map.entrySet()) {
-//			resultsTabel.addRow(new Object[] { entry.getKey(), entry.getValue() });
-//	    }
-//		resultsTabel.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-//		String[] columns = {"JobID","Score"};
+
 		scrollPane.setViewportView(resultsTabel);
 		
 		lblNewLabel = new JLabel("Top matching jobs:");
@@ -142,30 +135,7 @@ public class SecondScreen extends JFrame {
 		lblNewLabel.setBounds(32, 19, 363, 40);
 		contentPane.add(lblNewLabel);
 		
-//		lblNewLabel_1 = new JLabel("Good Luck!");
-//		lblNewLabel_1.setForeground(new Color(139, 69, 19));
-//		lblNewLabel_1.setFont(new Font("Times New Roman", Font.BOLD, 30));
-//		lblNewLabel_1.setBounds(432, 570, 155, 63);
-//		contentPane.add(lblNewLabel_1);
-		//javax.swing.ImageIcon icon = new javax.swing.ImageIcon(this.getClass().getResource("/house-icon.jpg"));
-		//JLabel.setIcon(icon);
-		//Image img = new ImageIcon(this.getClass().getResource("/house-icon.jpg")).getImage();
-		//JLabel.setIcon(new ImageIcon(img));
-		//JLabel lblNewLabel_1 = new JLabel("");
-		//ImageIcon icon1 = new ImageIcon(this.getClass().getResource("/home.png"));
 
-
-//		JButton btnNewButton  = new JButton("SUBMIT");
-//		btnNewButton.setForeground(Color.black);
-//		btnNewButton.setFont(new Font("Times New Roman", Font.BOLD, 15));
-//		btnNewButton.setBackground(new Color(18, 113, 230));
-//		btnNewButton.setBounds(911, 6, 40, 30);
-
-//		btnNewButton = new JButton("Back to Home");
-//		btnNewButton.setBackground(new Color(255, 255, 224));
-//		btnNewButton.setBounds(911, 6, 78, 64);
-		//ImageIcon icon2 = new ImageIcon(this.getClass().getResource("/home (1).png"));
-		//btnNewButton.setIcon(icon2);
 		JButton btnNewButton  = new JButton("Back To Home");
 		btnNewButton.setForeground(Color.black);
 		btnNewButton.setFont(new Font("Times New Roman", Font.BOLD, 23));

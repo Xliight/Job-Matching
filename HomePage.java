@@ -31,8 +31,7 @@ import java.awt.SystemColor;
 public class HomePage extends JFrame implements ActionListener{
 
 	private JPanel contentPane;
-	//private JTextField reqSkills;
-	//private JTextField desiredSkills;
+
 	String edu;
 	String dis;
 	String year;

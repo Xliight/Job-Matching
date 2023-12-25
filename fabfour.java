@@ -27,20 +27,14 @@ public class fabfour {
       String[] education = read.Education;
       String[] discipline = read.Discipline;
       String[] exp = read.Years_of_Experience; 
-      //String[] query = {"MS","Computer Science","Python,SQL,R,C,C++,Java,Hadoop,Spark,Hive,Pig,Communication Skills,presentation skills","5"};
-      
+
       InvertedIndex edu;
       edu = new InvertedIndex(education);
       //String edu_query = query[0];
       String edu_query = EDU;
       edu_index= edu.docLists.get(edu.termList.indexOf(edu_query));
       
-      // InvertedIndex dis;
-      // dis = new InvertedIndex(discipline);
-      // String dis_query = query[1];
-      // dis_index = dis.docLists.get(dis.termList.indexOf(dis_query));      
-   //    
-      // edu_dis = edu.merge(edu_index, dis_index);
+
       
       DisciplineScore dis;
       String dis_query = DIS;
@@ -83,7 +77,6 @@ public class fabfour {
          Totalscore.put(i,score);
       }
       System.out.println(edu);
-      //Totalscore.entrySet().stream().sorted(reverseOrder(Map.Entry.comparingByValue())).forEach(System.out::println);
    }
 }
 

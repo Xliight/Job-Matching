@@ -34,14 +34,7 @@ public class SkillScore {
          String[] query1 = query.split(",");
          List<String> token1 = Arrays.asList(tokens);
          skill_list.add(token1);
-         //String token;
-         
-        // for(int a = 0; a < query1.length; a++){
-          //  if(token1.contains(query1[a])){
-               //queryLengthVec[i] += Math.pow(w_t,2);
-            //}
-         //}
-         
+
          for(int j = 0; j < tokens.length; j++) {
             token = tokens[j];
             
